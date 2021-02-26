@@ -4,5 +4,6 @@ Each example explains one or more topics on how to use C++ and its implementatio
 via comments in the example code. Each example are solutions to different problems found in the books.
 
 This project aims to supply, over time, examples and best practices of the C++ language.
+
 References:
   C++ PROGRAMMING: PROGRAM DESIGN INCLUDING DATA STRUCTURES [Seventh Edition]
