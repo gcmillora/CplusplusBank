@@ -2,6 +2,10 @@
 
 using namespace std;
 
+//Declare a class with name house type, includes the function prototypes and
+//properties within the class. Used outside class definition. Functions with
+//'set' changes the value of the specified property. Functions with 'get'
+//returns the value of the property.
 class houseType{
     public:
         void set(string, int, int, int, int, int, double, double);
@@ -34,6 +38,9 @@ class houseType{
         double price;
         double tax;
     };
+
+//Declares an object of type houseType and initializes
+//its properties respectively according to Exercise 11.
 int main(){
     houseType newHouse();
     houseType house;
@@ -48,6 +55,8 @@ int main(){
     house.print();
     
 }
+
+//Constructor function that initializes the properties upon declaration.
 houseType::houseType(string style, int bedrooms, int bathrooms, int cars, int year,
         int square, double  uprice, double  utax){
             style = style;
@@ -59,6 +68,7 @@ houseType::houseType(string style, int bedrooms, int bathrooms, int cars, int ye
             price = uprice;
             tax = utax;
 }
+//Set the properties of the class from the arguments passed.
 void houseType::set(string style, int bedrooms,int bathrooms, int carsgarage, int yearbuilt, int sqfootage, double price, double tax){
     this->style = style;
     this->numOfBathrooms = bathrooms;
@@ -70,6 +80,7 @@ void houseType::set(string style, int bedrooms,int bathrooms, int carsgarage, in
     this->tax = tax;
 }
 
+//Prints the properties of the object with class houseType.
 void houseType::print() const{
     cout<<"House style: "+this->style<<endl;
     cout<<"Number of bedrooms: "<<this->numOfBedrooms<<endl;
@@ -81,7 +92,10 @@ void houseType::print() const{
     cout<<"Tax: "<<this->tax<<endl;
  }
 
- void houseType::setStyle(string style){
+//Functions with 'set' changes the value of the property specificied
+//of the object with the argument passed to the function. While functions
+//with 'get' returns the value of the property of the object.
+void houseType::setStyle(string style){
      this->style = style;
  }
 string houseType::getStyle() const{
@@ -102,7 +116,8 @@ void houseType::setNumOfBedrooms(int bedrooms){
 int houseType::getNumOfBedrooms() const{
     return this->numOfBedrooms;
 }
-
+//Continuation of the function definitions, as stated above. Follows the
+//definition for 'set' functions and 'get' functions.
 void houseType::setNumOfCarsGarage(int cars){
     this->numOfCarsGarage = cars;
 }
