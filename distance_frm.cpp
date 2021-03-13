@@ -11,7 +11,6 @@ const double PI = 3.1416;
 double distance(double c_1,double c_2,double p_1,double p_2){
     double num_1 = pow(c_2 - c_1,2);
     double num_2 = pow(p_2-c_1,2);
-    cout<<num_1<<" "<<num_2<<endl;
     double dist = sqrt((num_1)+num_2);
     return dist;
 }
