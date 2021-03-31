@@ -2,6 +2,11 @@
 
 using namespace std;
 
+//Function prototypes needed for the
+//problem. Formal parameters that are
+//pass by reference will change the value
+//of the actual parameters.
+
 int func(int, int);
 void func2(int, int&);
 
@@ -26,6 +31,9 @@ int func(int x,int y){
     return y;
 }
 
+//The value of the parameter int& y, will
+//change in the calling function since
+//it using pass by reference.
 void func2(int x, int& y){
     int num1,num2;
     num1 = x+y;
