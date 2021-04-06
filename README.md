@@ -1,4 +1,4 @@
-# CplusplusBank
+# Slader Codes
 A compilation of different lessons and implementation of data structures and algorithms using C++ language.
 Includes solutions in different Programming Exercises found in the books specified below:
 
