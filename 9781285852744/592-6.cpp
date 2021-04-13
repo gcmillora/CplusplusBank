@@ -28,8 +28,8 @@ int main(){
     //A for loop to output the element of the array
     //if the index is a multiple of 2 or 3.
     for(int ctr=0;ctr<50;ctr++){
-        if(alpha[ctr]%2==0&&
-        alpha[ctr]%3==0)
+        if(ctr%2==0||
+        ctr%3==0)
         cout<<alpha[ctr]<<" ";
     }
     cout<<endl;

@@ -1,21 +1,16 @@
 #include<iostream>
-#include<cmath>
-#include<iomanip>
+
+namespace mySpace{
+    const double RATE = 15.35;
+    int a = 3;
+}
 
 using namespace std;
 
-//A function prototype, includes the
-//name of the function, return type,
-//and functionparameters.
-int sumOfTwoNumbers(int,int);
-
 int main(){
-    cout<<sumOfTwoNumbers(3,4);
-}
-
-//Function definition, it includes the
-//function body. Compiler executes the
-//code in the function body.
-int sumOfTwoNumbers(int x,int y){
-    return x+y;
+    int num;
+    cin>>num;
+    mySpace::a = num;
+    cout<<mySpace::RATE<<" "<<mySpace::a+2<<" "<<num<<endl;
+    return 0;
 }
