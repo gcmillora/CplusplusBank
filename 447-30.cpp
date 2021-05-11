@@ -8,7 +8,6 @@ void traceMe(double& x,double& y,double& z);
 
 int main(){
     cout<<fixed<<showpoint<<setprecision(2);
-    cout<<"hakdog";
     double one, two, three;
     cout<<"Enter two numbers: ";
     cin>> one;
